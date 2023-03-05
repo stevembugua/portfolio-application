@@ -2,7 +2,7 @@
 
 # Project Task Management API
 
-This project management API is a simple web API where you make CRUD calls to a server to organize a project management app.
+This project management API is a simple web API where you make CRUD calls to a server to organize a portfolio management app.
 
 
 
