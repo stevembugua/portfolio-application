@@ -12,11 +12,13 @@ This project management API is a simple web API where you make CRUD calls to a s
 - ActiveRecord
 - SQLite3
 - Rack
+- React
+- Mui
 
 ## How To Use
 
 Install it and run:
-
+  for ruby; 
 ```sh
 bundle install
 
@@ -28,6 +30,13 @@ rake db:seed
 
 # start server
 rake start
+
+for react on a diffrent teminal;
+npm install
+
+npm run start
+
+make sure both servers are running
 ```
 
 
