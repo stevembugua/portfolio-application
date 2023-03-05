@@ -18,7 +18,6 @@ This project management API is a simple web API where you make CRUD calls to a s
 ## How To Use
 
 Install it and run:
-  for ruby; 
 ```sh
 bundle install
 
