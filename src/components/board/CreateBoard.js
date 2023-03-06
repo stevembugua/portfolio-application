@@ -6,7 +6,7 @@ const CreateBoard = ({ handleOpenModel }) => {
   return (
     <Grid item sx={{ minWidth: 150 }}>
       <Box className='flex'>
-        <Tooltip title='Create New Board'>
+        <Tooltip title='Create New skill'>
           <IconButton
             aria-label='create board'
             color='inherit'
@@ -14,7 +14,7 @@ const CreateBoard = ({ handleOpenModel }) => {
             <ControlPointIcon />
           </IconButton>
         </Tooltip>
-        Create Board
+        Create skill
       </Box>
     </Grid>
   )

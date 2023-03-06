@@ -101,10 +101,10 @@ const Board = ({
           {name}
         </Typography>
         <Box className='flex'>
-          <Tooltip title='Board Options'>
+          <Tooltip title='skill Options'>
             <IconButton
               aria-label='show options'
-              aria-controls='board-options'
+              aria-controls='skill-options'
               aria-haspopup='true'
               onClick={handleMenuOpen}>
               <MoreHorizIcon />
@@ -123,14 +123,14 @@ const Board = ({
       />
 
       {/* add task button */}
-      <Button
+      {/* <Button
         className='btn-add'
         color='inherit'
         onClick={handleOpenTaskModel}
         startIcon={<AddIcon />}
         variant='outlined'>
         Add Task
-      </Button>
+      </Button> */}
       {/* popups */}
       <DropdownMenu
         moreAnchorEl={moreAnchorEl}

@@ -33,8 +33,8 @@ const BoardModal = ({
       className='modal'
       open={openModal}
       onClose={handleCloseModel}
-      aria-labelledby='modal-edit-board'
-      aria-describedby='modal-edit-board-name'>
+      aria-labelledby='modal-edit-skill'
+      aria-describedby='modal-edit-skill-name'>
       <div
         className='modal-body edit-modal b-radius'
         style={{ background: !mode ? '#212121' : '#fff' }}>
@@ -43,7 +43,7 @@ const BoardModal = ({
           variant='h5'
           component='h3'
           gutterBottom>
-          Board Details
+          skill Details
         </Typography>
 
         <form
@@ -51,7 +51,7 @@ const BoardModal = ({
           autoComplete='off'
           onSubmit={handleSubmit}
           className='form details-form'>
-          <TitleField title={name} setTitle={setName} labelName='Board Name' />
+          <TitleField title={name} setTitle={setName} labelName='Skill Name' />
           <SaveButton title={board ? 'Save Board' : 'Create Board'} />
         </form>
       </div>
