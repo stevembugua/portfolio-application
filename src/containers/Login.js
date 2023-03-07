@@ -21,7 +21,7 @@ const Login = ({ history }) => {
         </Box>
         <Box className='flex column'>
           <Typography component='h2' variant='h6' align='center'>
-            Worry about your <em>job</em> not your <em>time</em>.
+           Helping you Worry not about your <em>job</em> nor your <em>time</em>.
           </Typography>
           <Typography
             component='p'
