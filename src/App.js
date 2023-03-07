@@ -13,6 +13,7 @@ import Box from '@mui/material/Box';
 
 
 
+
 const App = () => {
   // handle dark mode
   const [mode, setMode] = React.useState(true);
@@ -34,7 +35,7 @@ const App = () => {
       const response = await fetch('http://localhost:9292/projects');
       const data = await response.json();
       setProjects(data.projects);
-      console.log('numbver of projects is : ' + projects.length)
+      // console.log('numbver of projects is : ' + projects.length)
     } catch (error) {
       console.error('Data fetching failed with error  :  ' + error);
     }  
@@ -86,7 +87,7 @@ const App = () => {
         console.error('Error posting projects:', error);
       });
   };
-
+``
   const handleDeleteProject = (deleteProject) => {
     const updatedProjects = projects.filter(
       (project) => project.id !== deleteProject
@@ -150,6 +151,7 @@ if (projects === null) {
               path='/'
               render={(routerProps) => <Login {...routerProps} />}
             />
+           
             <Route
               exact
               path='/projects'

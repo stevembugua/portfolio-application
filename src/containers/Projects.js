@@ -38,14 +38,15 @@ const Projects = ({
       <Grid container spacing={2}>
         {projects?.length ?? 0
           ? projects.map((project) => (
-              <Project
-                mode={mode}
-                project={project}
-                key={`projectcard-${project.id}`} 
-                handleUpdatingProject={handleUpdatingProject}
-                handleDeleteProject={handleDeleteProject}
-              />
-              
+            <>
+            <div className='big'>
+            <div className='new'>
+                <h1>{project.title}</h1>
+               
+              </div>
+            </div>
+             
+              </>
             ))
           : [1, 2, 3].map((load) => {
               return (

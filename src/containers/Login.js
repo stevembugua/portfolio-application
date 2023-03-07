@@ -3,6 +3,7 @@ import { Logo } from '../components/nav/Logo'
 import { Grid, Typography, Button, Box } from '@mui/material'
 
 
+
 const Login = ({ history }) => {
   return (
     <Grid
@@ -34,7 +35,7 @@ const Login = ({ history }) => {
             variant='contained'
             size='large'
             className='btn-login'
-            color='primary'>
+            color='primary' >
             Login
           </Button>
         </Box>

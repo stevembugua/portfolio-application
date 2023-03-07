@@ -1,3 +1,27 @@
+.big{
+    padding: 1rem;
+}
+
+
+.new{
+
+    background: url("https://mobimg.b-cdn.net/v3/fetch/0b/0bc739968eeb709d8eebbdb132141cb8.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 7rem;
+    width: 15rem;
+    color: white;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    font-size: .8rem;
+    padding: .5rem;
+    /* display: flex; */
+    align-items: start;
+    justify-content: flex-start;
+    border-radius: .5rem;
+    opacity: .9;
+}
 h1{
-    color: red;
+    margin-top: 0;
 }

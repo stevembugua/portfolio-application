@@ -30,6 +30,7 @@ const ProjectDashboard = ({
   //handle projects
   const [project, setProject] = React.useState([])
   const [boards, setBoards] = React.useState([])
+  const [data, setData] = React.useState({})
 
   React.useEffect(() => {
     fetchProject()
@@ -39,8 +40,10 @@ const ProjectDashboard = ({
     fetch(`http://localhost:9292/projects/${id}`)
       .then((res) => res.json())
       .then((data) => {
+        setData(data)
         setProject(data)
-        setBoards(data.boards)
+        setBoards( data.project.boards)
+        console.log('Boards length is : ' +  boards.length)
       })
   }
 
@@ -145,12 +148,13 @@ const ProjectDashboard = ({
             </Grid>
 
             <Boards
+              data={data}
               boards={boards}
               setBoards={setBoards}
               fetchProject={fetchProject}
               mode={mode}
               colors={currentColorScheme}
-              projectId={project.id}
+              projectId={project.project.id}
             />
           </Container>
         </>

@@ -6,6 +6,7 @@ import BoardModal from '../components/modal/BoardModal'
 import { Container, Grid } from '@mui/material'
 
 const Boards = ({
+  data,
   boards,
   projectId,
   mode,
@@ -15,7 +16,10 @@ const Boards = ({
 }) => {
   //handle boards
   const handleDeleteBoard = (deleteBoard) => {
-    const updatedBoards = boards.filter((board) => board.id !== deleteBoard.id)
+
+    // console.log('Boards Received in delete : ' + Object.entries(data.project.boards[0])) 
+    console.log('Delete board id is : ' + deleteBoard.id)
+    const updatedBoards = data.project.boards.filter((board) => board.id !== deleteBoard.id)
 
     fetch(`http://localhost:9292/boards/${deleteBoard.id}`, {
       method: 'DELETE',
@@ -44,6 +48,7 @@ const Boards = ({
   }
 
   const handleCreateBoard = (newBoard) => {
+    console.log('Board name is ' + newBoard.name + '  the is ' + projectId)
     fetch('http://localhost:9292/boards', {
       method: 'POST',
       headers: {

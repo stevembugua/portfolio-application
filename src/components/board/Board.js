@@ -94,7 +94,7 @@ const Board = ({
       flexDirection='column'
       sx={{
         backgroundColor: (theme) =>
-          mode ? colors.colorLight : theme.palette.grey[800],
+       theme.palette.grey[800],
       }}>
       <Grid container alignContent='center' justifyContent='space-between'>
         <Typography variant='h6' component='h3' gutterBottom>
