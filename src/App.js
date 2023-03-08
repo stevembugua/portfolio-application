@@ -14,6 +14,7 @@ import Box from '@mui/material/Box';
 
 
 
+
 const App = () => {
   // handle dark mode
   const [mode, setMode] = React.useState(true);
@@ -139,6 +140,7 @@ if (projects === null) {
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
         <Router>
+           
           <Layout
             toggleTheme={toggleTheme}
             mode={mode}
