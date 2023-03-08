@@ -6,7 +6,8 @@ import { Grid, Typography, Button, Box } from '@mui/material'
 
 const Login = ({ history }) => {
   return (
-    <Grid
+    <>
+     <Grid
       sx={{ height: '100vh', width: '100vw', backgroundColor: '#fff' }}
       className='home-container'
       alignContent='center'
@@ -41,6 +42,10 @@ const Login = ({ history }) => {
         </Box>
       </Box>
     </Grid>
+
+   
+
+</>
   )
 }
 

@@ -6,7 +6,7 @@
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@mui/icons-material": "^5.0.0",
-    "@mui/lab": "next",
+    "@mui/lab": "^5.0.0-alpha.122",
     "@mui/material": "next",
     "@mui/styled-engine-sc": "next",
     "@mui/styles": "^5.0.0",

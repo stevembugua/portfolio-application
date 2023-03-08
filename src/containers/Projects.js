@@ -39,8 +39,8 @@ const Projects = ({
         {projects?.length ?? 0
           ? projects.map((project) => (
             <>
-            <div className='big'>
-            <div className='new'>
+            <div className='big' >
+            <div className='new' >
                 <h1>{project.title}</h1>
                
               </div>
