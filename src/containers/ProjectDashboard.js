@@ -37,7 +37,7 @@ const ProjectDashboard = ({
   }, [id])
 
   const fetchProject = () => {
-    fetch(`http://localhost:9292/projects/${id}`)
+    fetch(`https://portfoliobackend-eywv.onrender.com/projects/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setData(data)

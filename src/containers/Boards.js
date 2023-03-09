@@ -21,7 +21,7 @@ const Boards = ({
     console.log('Delete board id is : ' + deleteBoard.id)
     const updatedBoards = data.project.boards.filter((board) => board.id !== deleteBoard.id)
 
-    fetch(`http://localhost:9292/boards/${deleteBoard.id}`, {
+    fetch(`https://portfoliobackend-eywv.onrender.com/boards/${deleteBoard.id}`, {
       method: 'DELETE',
     })
 
@@ -33,7 +33,7 @@ const Boards = ({
       board.id === updatedBoard.id ? updatedBoard : board
     )
 
-    fetch(`http://localhost:9292/boards/${updatedBoard.id}`, {
+    fetch(`https://portfoliobackend-eywv.onrender.com/boards/${updatedBoard.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ const Boards = ({
 
   const handleCreateBoard = (newBoard) => {
     console.log('Board name is ' + newBoard.name + '  the is ' + projectId)
-    fetch('http://localhost:9292/boards', {
+    fetch('https://portfoliobackend-eywv.onrender.com/boards', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

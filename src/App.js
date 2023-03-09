@@ -33,7 +33,7 @@ const App = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch('http://localhost:9292/projects');
+      const response = await fetch('https://portfoliobackend-eywv.onrender.com/projects');
       const data = await response.json();
       setProjects(data.projects);
       // console.log('numbver of projects is : ' + projects.length)
@@ -44,7 +44,7 @@ const App = () => {
   const patchProjects = (updatedProject) => {
     console.log('Updating post id : ' + updatedProject.project.id)
     try {
-      fetch(` http://localhost:9292/projects/${updatedProject.project.id}`, {
+      fetch(` https://portfoliobackend-eywv.onrender.com/projects/${updatedProject.project.id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ const App = () => {
   };
 
   const postProjects = (project) => {
-    fetch('http://localhost:9292/projects/', {
+    fetch('https://portfoliobackend-eywv.onrender.com/projects/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ const App = () => {
       (project) => project.id !== deleteProject
     );
 
-    fetch(`http://localhost:9292/projects/${deleteProject}`, {
+    fetch(`https://portfoliobackend-eywv.onrender.com/projects/${deleteProject}`, {
       method: 'DELETE',
     });
 

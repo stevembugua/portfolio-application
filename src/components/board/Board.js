@@ -44,7 +44,7 @@ const Board = ({
 
   // handle new task
   const handleCreateTask = (newTask) => {
-    fetch('http://localhost:9292/tasks/', {
+    fetch('https://portfoliobackend-eywv.onrender.com/tasks/', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
