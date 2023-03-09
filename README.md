@@ -266,36 +266,5 @@ fetch('http://localhost:9292/boards/', {
 }
 ```
 
-### Tasks
-
-You can make all CRUD calls for the projects database.
-
-- CREATE tasks
-- GET/RETRIEVE all tasks
-- DELETE a task
-- UPDATE a task
-
-### Example: Delete a Task
-
-```js
-fetch(`http://localhost:9292/tasks/11`, {
-      method: 'DELETE',
-    })
-
-// output
-{
-    "message": "task successfully deleted",
-    "task": {
-        "id": 11,
-        "name": "Workspace for Test",
-        "due_date": "2021-09-30",
-        "description": "",
-        "status": "Not Started",
-        "priority": "Low",
-        "completed": false,
-        "board_id": 2,
-        "created_at": "2021-09-28T23:50:45.680Z",
-        "updated_at": "2021-09-28T23:50:45.680Z"
-    }
-}
-```
+### Licence
+    The project is licenced under MIT licence
