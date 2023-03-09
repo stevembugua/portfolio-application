@@ -7,28 +7,13 @@ This project management API is a simple web API where you make CRUD calls to a s
 
 
 ## Technologies Used in API
-
-- Ruby
-- ActiveRecord
-- SQLite3
-- Rack
 - React
-- Mui
+
 
 ## How To Use
 
 Install it and run:
-```sh
-bundle install
 
-# create migrations with activerecord
-rake db:migrate
-
-# if you would like to use seed data
-rake db:seed
-
-# start server
-rake start
 
 for react on a diffrent teminal;
 npm install
