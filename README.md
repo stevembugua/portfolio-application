@@ -1,8 +1,8 @@
 # portfolio-application
 
-# Project Task Management API
+# Project  Application API
 
-This project management API is a simple web API where you make CRUD calls to a server to organize a portfolio management app.
+This project application API is a simple web API where you make CRUD calls to a server to organize a portfolio application app.
 
 
 
